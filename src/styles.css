@@ -1,0 +1,47 @@
+/* styles.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2; /* Set background color to grey */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  }
+  
+  .search-form {
+    margin-bottom: 20px;
+    text-align: center; /* Center align the search form */
+  }
+  
+  .search-form input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  .search-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .train-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .train-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff; /* Set background color to white */
+    border-radius: 5px;
+  }
+  
+  .train-list li:hover {
+    background-color: #f0f0f0;
+  }
+  

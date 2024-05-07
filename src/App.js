@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+
+import React, { useState } from 'react';
+import SearchForm from './SearchForm';
+import TrainList from './TrainList';
+import responseData from './responseData';
+import './styles.css';
 
 function App() {
+  const [trains, setTrains] = useState(responseData || []); // Ensure trains is initialized with an empty array
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Train Schedule</h1>
+      <SearchForm setTrains={setTrains} />
+      <TrainList trains={trains} />
     </div>
   );
 }
